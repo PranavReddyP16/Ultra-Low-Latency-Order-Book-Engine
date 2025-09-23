@@ -54,6 +54,7 @@ include_directories(include)
 # Add subdirectories
 add_subdirectory(src)
 
-if(GTest_FOUND)
+# Only add tests if directory exists and GTest is found
+if(GTest_FOUND AND EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/tests/CMakeLists.txt")
     add_subdirectory(tests)
 endif()

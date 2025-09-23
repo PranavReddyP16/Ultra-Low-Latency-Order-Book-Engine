@@ -1,6 +1,7 @@
 #include "Types.h"
 #include "TSCTimer.h"
 #include <iostream>
+#include <iomanip>
 
 int main() {
     std::cout << "HFT Order Book Engine v1.0\n";
